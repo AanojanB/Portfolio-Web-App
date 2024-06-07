@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Work</title>
+    <style>
+        header {
+            text-align: center;
+        }
+        h1 {
+            font-size: 55px;
+            color: #6CCFF6;
+            background-color:#BB0A21 ;
+        }
+        h2 {
+            font-size: 45px;
+            color: #6CCFF6;
+            background-color:#BB0A21 ;
+        }
+        .titleGUI {
+            font-size: 35px;
+            background-color:#BB0A21 ;
+        }
+        body {
+            background-color: #001011;
+            color: #6CCFF6;
+        }
+        .descripGUI {
+            font-size: 20px;
+        }
+        .explainGUI {
+            font-size: 20px;
+        }
+        .titlePong {
+            font-size: 35px;
+            background-color:#BB0A21 ;
+        }
+        .descripPong {
+            font-size: 20px;
+        }
+        .explainPong {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Work</h1>
+        <h2>GUI App</h2>
+    </header>
+    <div class="titleGUI">
+        <p>Tic-Tac-Toe</p>
+    </div>
+    <div class="gameTicTacToe">
+        <img src="Assets/tic-tac-toe-java.png" alt="tic-tac-toe game player X winning three in row second column">
+    </div>
+    <div class="descripGUI">
+        <p>
+            The GUI App I made with my partner Henry is the Tic-Tac-Toe game . Like the game in real life have three matching characters in a row you win. The app allows you to click on grid and inputting
+            character then it switch to another character to place their character. They can't place their character on an already taken gird box. Once the there are
+            three row matching characters the game will end and show wins additionally increasing the player count wins. There is replay feature to play again and in the top
+            right it shows who's turn it is. Our wins were having a replay feature, changing the font and font size of the text as well as adding colour to the X and O,
+            displaying who's turn it is. And our challenges were the for loops variables were causing issues something about local scope, creating multiple JLabels as it use to replace the other JLabel,
+            working with git, not being able to create branches. Wins were making the score board, having the players movement, creating the circle to move properly. Challenges were figuring out
+            how to use JavaFX and while trying switching IDE, making a border had to redo due to the horizontal border breaking everything, and finding where the error due a bunch red lines
+            that don't tell the actual thing that's breaking the code
+        </p>
+    </div>
+    <div class="explainGUI">
+        <p>
+            The GUI App was made by using Java Swing library and Java awt. Me and Henry first created a JButton variable gridArea that would be a double array variable that would be the boxes
+            in the tic-tac-toe game, the array variable had nothing, so we change what its in the box by clicking on the box. The we created a double for loop that would
+            create the sizes of the boxes. Made another JButton variable that would contain original gridArea but with the double array contain the for loop variables due to 
+            local scope variable issues. The we used actionListener so that if the boxes were empty once you clicked it would put a X or O and switch every turn. Then we made it
+            check win conditions for the y column and x column with a for loops and if statements, while the diagnal win conditons were just if statements. In those win checkers
+            it make certain variable which determined if player X or O won. Which trigger another if statement increasing the win counter variable by one and using setText to show
+            which player won and how wins that player has. We should who's turn it was with JLabel variable that change the text and would see who's turn it is with an if statement.
+            Replay feature creating JButton and resetting the JButton gridArea back to being empty and the gameWon variable to be false which stop people from changing boxes even after
+            the game is won by a person. Lastly, we incresed the text size, colour, and border size. Saving number of wins a player has even after closing the game. Voice lines on
+            who's turn it is and what box is being hover over to have it be more accessible to
+            people.
+        </p>
+    </div>
+    <div class="titlePong">
+        <p>Victorious Volleys: Pong</p>
+    </div>
+    <div class="gamePong">
+        <img src="Assets/pong-java.png" alt="The game pong one player is light blue and the other is pink while the ball is lighter blue with a middle line separating the players">
+    </div>
+    <div class="descripPong">
+        <p>The Culminating Project I am working is Pong, but with more features. So far the game is Pong but the controlled players can both in the x and y directions. The ball
+            after each volley gets faster and faster. If the ball enters the left and right borders it point for the oponent and the goes to 10 before someone wins. There is a 
+            play again feature, but that is all.
+        </p>
+    </div>
+    <div class="explainPong">
+        <p>
+            I created my app by using JavaFx which library of code I used that helped me interact with FXML files with this program called Scene Builder. I would create my functions
+            in my class files then link the class to the AnchorPane of FXML file and then give certain objects in the FXML functions. I make two FXML IDs for Scene Builder so those
+            objects are tied to my code. The rectangle/player move if a key is pressed get their layout of the rectangle then adding or subtracting a integer value. The each key bind
+            has boolean variable tied to it so if its pressed it true and if it's not pressed false. This is all being in Animation timer which allows moving objects. I created FXML Id for
+            a circle which will be my ball. The ball function will in Animation timer however it be 100FPS and just like rectangle get the layout of the circle and the movement variable.
+            I create border so that bounces from the walls, so if it gets out of the borders of the walls that layout of the ball will get subtract  by itself everytime so it can leave the
+            bounds. I made if it hits the wall it bounces basically make the movement in the y direction be multipled by negative each time it hits either  the top or bottoms border.
+            If the ball intersects with the player it x movement get multipleid a negative number to bounce in other direction and increase the speed. If it passed through right and left
+            border it is point for the other person and the ball resets to the set certain by resetting it coordinates. Then there functions to give the pressing of key bindings a true or false
+            Then I make it the when the player intersect with rectangles in the middle their speed in that direction get sets to 0 so they can't get pass the middle line. Then there is border
+            for the player which basically the same as the circle border. I also set it up once player get 10 points the ball function will be stopped and the objects in the Scene Builder
+            that will display who wins and the replay feature to be visible by setting Id that it linked to to be true, so like setVisible(true). I created buttons that switch betweens scenes
+            by putting in FXML you want to got to and it Action event function which be linked to the button in Scene Builder. The features I want to add are score streak, having the ball change
+            as the number of volleys increase, I want to be able to be more accesible by changing the controls through controls setting, and I want to add sound effects so it isn't so silent
+            when playing the game.
+        </p>
+    </div>
+</body>
+</html>
