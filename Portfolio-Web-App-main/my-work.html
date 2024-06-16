@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>My Work</title>
+    <style>
+        header {
+            text-align: center;
+        }
+        h1 {
+            font-size: 55px;
+            color: #6CCFF6;
+            background-color:#BB0A21 ;
+        }
+        h2 {
+            font-size: 45px;
+            color: #6CCFF6;
+            background-color:#BB0A21 ;
+        }
+        .titleGUI {
+            font-size: 35px;
+            background-color:#BB0A21 ;
+            text-align: center;
+        }
+        .titlePong {
+            font-size: 35px;
+            background-color:#BB0A21 ;
+            text-align: center;
+        }
+        body {
+            background-color: #001011;
+            color: #6CCFF6;
+            font-family: "Ubuntu", sans-serif;
+            font-size: 18px;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Work</h1>
+    </header>
+    <div class="titleGUI">
+        <p>Tic-Tac-Toe</p>
+    </div>
+    <div class="gameTicTacToe"> <!-- Replace with either the game itself or slideshow of gifs and images -->
+        <img src="Assets/tic-tac-toe-java.png" alt="tic-tac-toe game player X winning three in row second column">
+    </div>
+    <div class="descripGUI">
+        <p>
+            The GUI App I made with my partner Henry is the Tic-Tac-Toe game . Like the game in real life have three matching characters in a row you win. The app allows you to click on grid and inputting
+            character then it switch to another character to place their character. They can't place their character on an already taken gird box. Once the there are
+            three row matching characters the game will end and show wins additionally increasing the player count wins. There is replay feature to play again and in the top
+            right it shows who's turn it is. Our wins were having a replay feature, changing the font and font size of the text as well as adding colour to the X and O,
+            displaying who's turn it is. And our challenges were the for loops variables were causing issues something about local scope, creating multiple JLabels as it use to replace the other JLabel,
+            working with git, not being able to create branches. Wins were making the score board, having the players movement, creating the circle to move properly. Challenges were figuring out
+            how to use JavaFX and while trying switching IDE, making a border had to redo due to the horizontal border breaking everything, and finding where the error due a bunch red lines
+            that don't tell the actual thing that's breaking the code
+        </p>
+    </div>
+    <div class="explainGUI">
+        <p>
+            The GUI App was made by using Java Swing library and Java awt. Me and Henry first created a JButton variable gridArea that would be a double array variable that would be the boxes
+            in the tic-tac-toe game, the array variable had nothing, so we change what its in the box by clicking on the box. The we created a double for loop that would
+            create the sizes of the boxes. Made another JButton variable that would contain original gridArea but with the double array contain the for loop variables due to 
+            local scope variable issues. The we used actionListener so that if the boxes were empty once you clicked it would put a X or O and switch every turn. Then we made it
+            check win conditions for the y column and x column with a for loops and if statements, while the diagnal win conditons were just if statements. In those win checkers
+            it make certain variable which determined if player X or O won. Which trigger another if statement increasing the win counter variable by one and using setText to show
+            which player won and how wins that player has. We should who's turn it was with JLabel variable that change the text and would see who's turn it is with an if statement.
+            Replay feature creating JButton and resetting the JButton gridArea back to being empty and the gameWon variable to be false which stop people from changing boxes even after
+            the game is won by a person. Lastly, we incresed the text size, colour, and border size. Saving number of wins a player has even after closing the game. Voice lines on
+            who's turn it is and what box is being hover over to have it be more accessible to
+            people.
+        </p>
+    </div>
+    <div class="titlePong">
+        <p>Victorious Volleys</p>
+    </div>
+    <div class="gamePong"> <!-- Replace with either the game itself or slideshow of gifs and images -->
+        <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/c23d4c9328164a698cbf854b95edf55a?sid=a36d61eb-f69f-4fbb-9819-17def6d4f076" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+    </div>
+    <div class="descripPong">
+        <p>
+            The culminating project I am working is a game called Victorious Volleys, which game like Pong but with more features. The game has two players, and the goal are for
+            the players to hit the ball on to the otherside. It has dash line in the middle to ensure the players don't go to the otherside. The game is up to 10 and it shows
+            the win streak of the players. It also has power up feature that makes the other player freeze until a goal is scored.
+        </p>
+    </div>
+    <div class="explainPong">
+        <p>
+            The game was created using the JavaFX library and the Scene Builder editor. The Scene Builder editor allows for easy drag-and-drop objects and edits to the object without needing to code the colour in Java. The objects that are dragged and dropped into the Anchor Pane can be assigned IDs, which allow the person to change and make edits to the object in the Java class files. Simply type @FXML private "the object" and "name you want to call the object." How the rectangle moves is by creating boolean values for the key presses, which will turn true when they are pressed. This is used to meet the conditional if statement that makes the player actually move. In the if statements, it gets the layout of the rectangle and adds or subtracts the X or Y value to make it either right, left, up, or down. The game ball was made by getting the layout of the ball and adding an integer value to the layout so that it moved. All of this is in an animation loop. If the ball has top and bottom borders, it bounces by multiplying the y movement of the ball by -1. If the ball hits the player, it multiplies by -1.5 for the circle's x movement to bounce off the player and increase the speed. The game gives the players points by having the ball pass a certain X value, which is basically when the ball passes the borders of the left or right sides. If the player reaches 10 points, the game ends by stopping the ball, making the win streak labels, and clicking the play again button to show the object as visible using setVisible(true). Additionally, a power feature was added, so when the first player reaches 5 points, the other player has a power up on their side, which freezes the other player and only unfreezes when the losing player scores a point. The win streak feature was created by creating functions. One function writes the number of wins a player has individually in a txt file, and the other function reads that file, gets the number, and returns it so that the win streaks are saved even after closing the game. The buttons were made by using an action event, so when the person clicks the button, it does whatever is in the function, the play again resets the scores, and the timeline starts again to make the ball again. The back button just controls the scene by, like, targeting the FXML that you want to change to.
+        </p>
+    </div>
+</body>
+</html>
