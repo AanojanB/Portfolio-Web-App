@@ -1,1 +1,1 @@
-Use the useThisBranch had issues with pulling and push on main
+Use the useThisBranch had issues with pulling and pushing on main
