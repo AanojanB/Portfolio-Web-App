@@ -78,34 +78,30 @@
         </p>
     </div>
     <div class="titlePong">
-        <p>Pong: Victorious Volleys</p>
+        <p>Victorious Volleys</p>
     </div>
     <div class="gamePong"> <!-- Replace with either the game itself or slideshow of gifs and images -->
         <img src="Assets/pong-java.png" alt="The game pong one player is light blue and the other is pink while the ball is lighter blue with a middle line separating the players">
     </div>
     <div class="descripPong">
-        <p>The Culminating Project I am working is Pong, but with more features. So far the game is Pong but the controlled players can both in the x and y directions. The ball
-            after each volley gets faster and faster. If the ball enters the left and right borders it point for the oponent and the goes to 10 before someone wins. There is a 
-            play again feature, but that is all.
+        <p>The Culminating Project I am working on is Pong like game Victorious Volleys, but with more features. The game has two rectangles you can move using the keyboard one rectangle controls being WASD
+            and the other being TFGH. They can move in both the x and y direction, but cannot go out of the screen. There is a center dash line
+            that prevents the rectangles from going to each other side. There is ball that the rectangles to  bounce of them to the other player
+            which increase the speed of the ball. The ball does bounce on the top and  bottom screen borders, but it doesn't increase
+            the speed. If the ball goes out of the screen on the right or left it is a point for one of the players. Additonally there is power
+            up that comes into the game which will slow the other player down. The game is to 10, and shows who wins, what there win streak is, and 
+            shows the play again button. 
         </p>
     </div>
     <div class="explainPong">
         <p>
-            I created my app by using JavaFx which library of code I used that helped me interact with FXML files with this program called Scene Builder. I would create my functions
-            in my class files then link the class to the AnchorPane of FXML file and then give certain objects in the FXML functions. I make two FXML IDs for Scene Builder so those
-            objects are tied to my code. The rectangle/player move if a key is pressed get their layout of the rectangle then adding or subtracting a integer value. The each key bind
-            has boolean variable tied to it so if its pressed it true and if it's not pressed false. This is all being in Animation timer which allows moving objects. I created FXML Id for
-            a circle which will be my ball. The ball function will in Animation timer however it be 100FPS and just like rectangle get the layout of the circle and the movement variable.
-            I create border so that bounces from the walls, so if it gets out of the borders of the walls that layout of the ball will get subtract  by itself everytime so it can leave the
-            bounds. I made if it hits the wall it bounces basically make the movement in the y direction be multipled by negative each time it hits either  the top or bottoms border.
-            If the ball intersects with the player it x movement get multipleid a negative number to bounce in other direction and increase the speed. If it passed through right and left
-            border it is point for the other person and the ball resets to the set certain by resetting it coordinates. Then there functions to give the pressing of key bindings a true or false
-            Then I make it the when the player intersect with rectangles in the middle their speed in that direction get sets to 0 so they can't get pass the middle line. Then there is border
-            for the player which basically the same as the circle border. I also set it up once player get 10 points the ball function will be stopped and the objects in the Scene Builder
-            that will display who wins and the replay feature to be visible by setting Id that it linked to to be true, so like setVisible(true). I created buttons that switch betweens scenes
-            by putting in FXML you want to got to and it Action event function which be linked to the button in Scene Builder. The features I want to add are score streak, having the ball change
-            as the number of volleys increase, I want to be able to be more accesible by changing the controls through controls setting, and I want to add sound effects so it isn't so silent
-            when playing the game.
+            I created the game through Java using JavaFX library to make it easier to build the game.
+            I made IDs with JavaFX, so I can link lines of code to the objects in my SceneBuilder which is an easy
+            way to make scenes and objects. The AnchorPane in SceneBuilder needs to be linked to a class file
+            to get the IDs made and the code of the class. I made boolean variables for keys, so that when a key was pressed it became true making it
+            meet the conditions for moving the players. The movement of the players was made by getting where they
+            were on the screen using getLayout function and then add or subtract depending which way I wanted to move the player.
+            For example, to move the player down I would add to the x value of getLayoutX of the players. 
         </p>
     </div>
 </body>
