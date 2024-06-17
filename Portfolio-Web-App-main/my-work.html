@@ -47,7 +47,7 @@
     <div class="titleGUI">
         <p>Tic-Tac-Toe</p>
     </div>
-    <div class="gameTicTacToe"> <!-- Replace with either the game itself or slideshow of gifs and images -->
+    <div class="gameTicTacToe"> 
         <img src="Assets/tic-tac-toe-java.png" alt="tic-tac-toe game player X winning three in row second column">
     </div>
     <div class="descripGUI">
@@ -80,28 +80,19 @@
     <div class="titlePong">
         <p>Victorious Volleys</p>
     </div>
-    <div class="gamePong"> <!-- Replace with either the game itself or slideshow of gifs and images -->
-        <img src="Assets/pong-java.png" alt="The game pong one player is light blue and the other is pink while the ball is lighter blue with a middle line separating the players">
+    <div class="gamePong"> 
+        <center><iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS-4iDL5t2McDH0st-hYrFXPFkHBh809SouwdejnSpSwHGA1u2n-Xp1DRYoQ-LVErHWHsHGU8aL5w8N/embed?start=true&loop=true&delayms=3000&rm=minimal" frameborder="0" width="1160" height="669" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></center>
     </div>
     <div class="descripPong">
-        <p>The Culminating Project I am working on is Pong like game Victorious Volleys, but with more features. The game has two rectangles you can move using the keyboard one rectangle controls being WASD
-            and the other being TFGH. They can move in both the x and y direction, but cannot go out of the screen. There is a center dash line
-            that prevents the rectangles from going to each other side. There is ball that the rectangles to  bounce of them to the other player
-            which increase the speed of the ball. The ball does bounce on the top and  bottom screen borders, but it doesn't increase
-            the speed. If the ball goes out of the screen on the right or left it is a point for one of the players. Additonally there is power
-            up that comes into the game which will slow the other player down. The game is to 10, and shows who wins, what there win streak is, and 
-            shows the play again button. 
+        <p>
+            The culminating project I am working is a game called Victorious Volleys, which game like Pong but with more features. The game has two players, and the goal are for
+            the players to hit the ball on to the otherside. It has dash line in the middle to ensure the players don't go to the other side. The game is up to 10 and it shows
+            the win streak of the players. The win streak will save even after opening and closing the game. It also has power up feature that makes the other player freeze until a goal is scored.
         </p>
     </div>
     <div class="explainPong">
         <p>
-            I created the game through Java using JavaFX library to make it easier to build the game.
-            I made IDs with JavaFX, so I can link lines of code to the objects in my SceneBuilder which is an easy
-            way to make scenes and objects. The AnchorPane in SceneBuilder needs to be linked to a class file
-            to get the IDs made and the code of the class. I made boolean variables for keys, so that when a key was pressed it became true making it
-            meet the conditions for moving the players. The movement of the players was made by getting where they
-            were on the screen using getLayout function and then add or subtract depending which way I wanted to move the player.
-            For example, to move the player down I would add to the x value of getLayoutX of the players. 
+            The game was created using the JavaFX library and the Scene Builder editor. The Scene Builder editor allows for easy drag-and-drop objects and edits to the object without needing to code the colour in Java. The objects that are dragged and dropped into the Anchor Pane can be assigned IDs, which allow the person to change and make edits to the object in the Java class files. Simply type @FXML private "the object" and "name you want to call the object." How the rectangle moves is by creating boolean values for the key presses, which will turn true when they are pressed. This is used to meet the conditional if statement that makes the player actually move. In the if statements, it gets the layout of the rectangle and adds or subtracts the X or Y value to make it either right, left, up, or down. The game ball was made by getting the layout of the ball and adding an integer value to the layout so that it moved. All of this is in an animation loop. If the ball has top and bottom borders, it bounces by multiplying the y movement of the ball by -1. If the ball hits the player, it multiplies by -1.5 for the circle's x movement to bounce off the player and increase the speed. The game gives the players points by having the ball pass a certain X value, which is basically when the ball passes the borders of the left or right sides. If the player reaches 10 points, the game ends by stopping the ball, making the win streak labels, and clicking the play again button to show the object as visible using setVisible(true). Additionally, a power feature was added, so when the first player reaches 5 points, the other player has a power up on their side, which freezes the other player and only unfreezes when the losing player scores a point. The win streak feature was created by creating functions. One function writes the number of wins a player has individually in a txt file, and the other function reads that file, gets the number, and returns it so that the win streaks are saved even after closing the game. The buttons were made by using an action event, so when the person clicks the button, it does whatever is in the function, the play again resets the scores, and the timeline starts again to make the ball again. The back button just controls the scene by, like, targeting the FXML that you want to change to.
         </p>
     </div>
 </body>
